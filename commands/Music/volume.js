@@ -21,7 +21,7 @@ class Volume extends Command {
         if (!queue) return message.reply("❌ | I am not playing anything?");
 
         const amount = args[0];
-        if (!amount || isNaN(amount)) return message.reply("❌ | Please enter the volume amount to set!");
+        if (!amount || isNaN(amount)) return message.reply("❌ | Please enter the volume amount to set! [Current volume: " + queue.volume + "]");
         if (parseInt(amount) < 0 || parseInt(amount) > 200) return message.reply("❌ | Volume amount must be in range of `0-200`!");
 
         queue.player.setVolume(message, parseInt(amount));
