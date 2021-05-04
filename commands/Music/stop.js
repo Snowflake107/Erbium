@@ -22,7 +22,7 @@ class Stop extends Command {
 
         queue.player.stop(message);
 
-        message.reply(`✅ | Stopped!`);
+        message.reply(`✅ | Stopped the music player!`);
     }
 
 }
