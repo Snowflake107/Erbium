@@ -7,7 +7,7 @@ class Play extends Command {
 
         this.config({
             name: "play",
-            aliases: ["p"],
+            aliases: ["p", "add"],
             description: "Plays a song in a voice channel",
             permissions: []
         });
