@@ -7,7 +7,7 @@ class Volume extends Command {
 
         this.config({
             name: "volume",
-            aliases: [],
+            aliases: ["vol"],
             description: "Sets music volume",
             permissions: []
         });
