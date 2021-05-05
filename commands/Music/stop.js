@@ -7,7 +7,7 @@ class Stop extends Command {
 
         this.config({
             name: "stop",
-            aliases: [],
+            aliases: ["st", "dc", "disconnect"],
             description: "Stops the player",
             permissions: []
         });
