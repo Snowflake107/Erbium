@@ -7,7 +7,7 @@ class Util {
     }
 
     static formatDuration(ms, number) {
-        return  if (isNaN(ms)) throw new Error("Value is not a number");
+        if (isNaN(ms)) throw new Error("Value is not a number");
  return require('pretty-ms')(ms, {
  verbose: true,
  compact: false,
